@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário de Cadastro de Cliente</title>
+</head>
+<body>
+	<h1>Formulário de Cadastro de Cliente</h1>
+
+	<form id="formCadastro">
+		<progress id="progresso" value="40" max="100"></progress>
+		
+		<p><label for="nascimento">Data de nascimento:</label>
+		<input type="date" id="nascimento" name="nascimento" required></p>
+
+		<p><label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required></p>
+
+		<p><label for="telefone">Telefone:</label>
+		<input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required></p>
+
+		<p><label for="mes">Mês de adesão:</label>
+		<input type="month" id="mes" name="mes" required></p>
+
+		<p><label for="filmes">Número de filmes a ver semanalmente (1 a 7):</label>
+		<input type="number" id="nota" name="nota" min="1" max="7" step="1" pattern="[1-7]" required></p>
+
+		<p><label for="cor">Cor de preferência para visualização da área do cliente:</label>
+		<input type="color" id="cor" name="cor" value="#ff0000" required></p>
+
+		<p><label for="endereco">Endereço da página pessoal do cliente:</label>
+		<input type="url" id="site" name="site" placeholder="https://www.exemplo.com" required></p>
+
+		<p><label for="data">Data e hora de uso do cupom de desconto da primeira compra:</label>
+		<input type="datetime-local" id="data-hora" name="data-hora" required></p>
+
+		<h4>Preferência de gênero de filmes:</h4>
+
+		<p><label for="acao">Ação:</label>
+		<input type="range" id="acao" name="acao" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="drama">Drama:</label>
+		<input type="range" id="drama" name="drama" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="romance">Romance:</label>
+		<input type="range" id="romance" name="romance" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="comedia">Comédia:</label>
+		<input type="range" id="comedia" name="comedia" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="suspense">Suspense:</label>
+		<input type="range" id="suspense" name="suspense" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="terror">Terror:</label>
+		<input type="range" id="terror" name="terror" min="1000" max="10000" step="500" value="5000"></p>
+
+		<p><label for="ficcao">Ficção Científica:</label>
+		<input type="range" id="ficcao" name="ficcao" min="1000" max="10000" step="500" value="5000"></p>
+
+		<button type="submit">Cadastrar</button>
+	</form>
+
+	
+
+</body>
+</html>
