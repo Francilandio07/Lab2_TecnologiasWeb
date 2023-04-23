@@ -1,0 +1,52 @@
+body,html{
+	height: 100%;
+	margin: 0;
+}
+.bg{
+	background-image: url("imagens/cell.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 1.0);
+}
+
+h3{
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #000;
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 35px;
+}
+p{
+	display: inline;
+	font-size: 20px;
+	color: green;
+	border: 1px solid black;
+  	padding: 10px;
+  	border-radius: 10px;
+  	margin-bottom: 30px;
+}
+#a1{
+	display: inline-block;
+  	border: 1px solid black;
+  	padding: 10px;
+  	border-radius: 10px;
+  	background-color: rgba(50, 0, 0, 0.6);
+	color: lightpink;
+	font-size: 30px;
+}
+#a2{
+	display: inline-block;
+  	border: 1px solid black;
+  	padding: 10px;
+  	border-radius: 10px;
+  	background-color: rgba(50, 20, 0, 0.6);
+	color: lightblue;
+	font-size: 30px;
+}
+form{
+	margin-top: 30px;
+	text-align: center;
+}
