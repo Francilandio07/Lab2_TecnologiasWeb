@@ -1,0 +1,89 @@
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+	.b1{
+		background-color: darkgreen;
+		display: block;
+		height: 180px;
+		width: 140px;
+		margin: 0 auto;
+	}
+	.b2{
+		display: none;
+
+	}
+	.b3{
+		display: none;
+	}
+	.b4{
+		display: none;
+	}
+	.b5{
+		display: none;
+	}
+}
+
+/* Estilos para desktops */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.b1{
+		background-color: darkgreen;
+		display: block;
+		height: 90px;
+		width: 360px;
+		margin: 0 auto;
+	}
+	.b2{
+		background-color: blue;
+		display: block;
+		height: 90px;
+		width: 360px;
+		margin: 0 auto;
+	}
+	.b3{
+		display: none;
+	}
+	.b4{
+		display: none;
+	}
+	.b5{
+		display: none;
+	}
+}
+
+/* Estilos para TVs */
+@media (min-width: 1200px) {
+	.b1{
+		background-color: darkgreen;
+		display: block;
+		height: 45px;
+		width: 440px;
+		margin: 0 auto;
+	}
+	.b2{
+		background-color: blue;
+		display: block;
+		height: 45px;
+		width: 440px;
+		margin: 0 auto;
+	}
+	.b3{
+		background-color: magenta;
+		display: block;
+		height: 45px;
+		width: 440px;
+		margin: 0 auto;
+	}
+	.b4{
+		background-color: darkgreen;
+		display: block;
+		height: 45px;
+		width: 440px;
+		margin: 0 auto;
+	}
+	.b5{
+		background-color: blue;
+		display: block;
+		height: 45px;
+		width: 440px;
+		margin: 0 auto;
+	}
+}

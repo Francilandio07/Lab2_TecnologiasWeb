@@ -1,0 +1,251 @@
+
+
+.pai{
+	align-items: center;
+  	justify-content: center;
+	font-family: Arial;
+	font-size: 2vw;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+	.container{
+		align-items: center;
+		justify-content: center;
+	}
+	.b1{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+		height: 6vh;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	.b2{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+		height: 6vh;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	.b3{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+		height: 6vh;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	.b4{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+		height: 6vh;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	.b5{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: center;
+		height: 6vh;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	.texto{
+		display: block;
+		height: 45px;
+		width: 40vw;
+		margin: 1vw auto;
+	}
+	h1{
+		font-size: 3vw;
+	}
+	p{
+		text-align: justify;
+	}
+	.img{
+		display: none;
+	}
+}
+
+/* Estilos para desktops */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.container{
+		display: inline-block;
+		width: 20vw;
+	}
+	.b1{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw auto;
+	}
+	.b2{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw auto;
+	}
+	.b3{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw auto;
+	}
+	.b4{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw auto;
+	}
+	.b5{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw auto;
+	}
+	.texto{
+		display: inline-block;
+		width: 70vw;
+		transform: translateX(2vw);
+	}
+	h1{
+		font-size: 4vw;
+		margin: 1vw;
+	}
+	p{
+		text-align: justify;
+	}
+	.img{
+		display: none;
+	}
+}
+
+/* Estilos para TVs */
+@media (min-width: 1200px) {
+	.container{
+		display: inline-block;
+		width: 18vw;
+		transform: translateY(-3vw);
+		margin: 1vw;
+	}
+	.b1{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 3vw;
+		
+		margin: 1vw;
+	}
+	.b2{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 3vw;
+		
+		margin: 1vw;
+	}
+	.b3{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 4vw;
+		
+		margin: 1vw;
+	}
+	.b4{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 3vw;
+		
+		margin: 1vw;
+	}
+	.b5{
+		background-color: lightgrey;
+		border: 1px solid grey;
+		display: flex;
+		align-items: center;
+  		justify-content: left;
+  		padding-left: 1vw;
+		height: 3vw;
+		
+		margin: 1vw;
+	}
+	.texto{
+		transform: translateY(8vh);
+		display: inline-block;
+		width: 48vw;
+		margin: 0.5vw;
+	}
+	h1{
+		font-size: 4vw;
+		margin: 1vw;
+	}
+	p{
+		text-align: justify;
+	}
+	.img{
+		display: inline-block;
+	    justify-content: center;
+	    align-items: flex-start;
+		width: 30vw;
+		height: 30vw;
+		margin: 1vw auto;
+		position: fixed;
+		top: 7vh;
+		right: 0;
+	}
+	img{
+		height: 16vw;
+		width: 25vw;
+	}
+}
