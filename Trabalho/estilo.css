@@ -1,0 +1,1704 @@
+
+@font-face {
+  font-family: 'Fonte1';
+  src: url('Fonte1.ttf');
+}
+
+@font-face {
+  font-family: 'Fonte2';
+  src: url('Fonte2.ttf');
+}
+
+body {
+  font-family: 'Fonte2', sans-serif;
+}
+
+
+.buttons .like{
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+.totoro{
+  font-family: 'Fonte1', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.h_cont{
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+.a2{
+  width: 100%;
+  height: auto;
+ 
+  background-color: rgb(253, 197, 58);
+
+}
+
+.navegacao {
+  width: 90%;
+  height: auto;
+  
+     
+  margin-top: 50px;
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+/* Style the topnav links */
+.navegacao .b {
+  font-size: 20px; /*unidade de medida absoluta*/
+  
+  display: inline;
+  color: #f2f2f2;
+  line-height: 80px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+
+    font-family: 'Fonte1', sans-serif;
+  
+ 
+}
+
+
+
+.navegacao .search-container {
+  float: right;
+  
+  
+  
+  
+}
+
+.navegacao input[type=text] {
+  width: 300px;
+  height: 30px;
+  font-size: 17px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: #ddd;
+
+  
+}
+
+.navegacao .search-container button {
+  float: right;
+  width: 60px;
+  height: 32px;
+  text-align: center;
+  margin-right: 16px;
+  background: #ddd;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.navegacao .search-container button:hover {
+  background: #ccc;
+  
+}
+
+
+
+
+
+/* Change color on hover */
+.navegacao .b:hover { /* seletor do tipo pseudo-classe*/
+  background-color: #ddd;
+  color: black;
+}
+
+
+.hd1{
+        
+  display: flex;
+  width: 90%;
+  height: 200px;
+  background-color: #ff340c;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  align-items: center;
+
+  
+}
+
+.hd2{
+
+        flex-basis: 30%;
+      
+        height: 150px;
+   
+   
+        text-align: left;
+        display: flex;
+        
+}
+
+.hd3{
+ 
+       
+  
+       
+        display: block;
+        width: 90%;
+        height: 200px;
+       position: relative;
+           font-family: 'Fonte1', sans-serif;
+   
+ 
+ 
+}
+
+
+
+.comp{
+
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: #ff340c;
+  color: #f2f2f2;
+  text-align: left;
+
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+
+}
+
+.desc{
+
+
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #f2f2f2;
+  background-color: #ff340c;
+
+  text-align: left;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+ 
+}
+
+.barra{
+  display: flex;
+  width: 90%;
+  height: 30px;
+  background-color: #787474;
+
+  margin-left: auto;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Fonte1', sans-serif;
+}
+
+.trending{
+color: #fae319;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.barra .n{
+   color: #f2f2f2;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+
+
+.redes{
+
+margin-left: auto;
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 60px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+
+  color: white;
+}
+
+.fa-twitter {
+ 
+  color: white;
+}
+
+.fa-youtube {
+ 
+  color: rgb(206, 41, 41);
+}
+
+.fa-instagram {
+ 
+  color: white;
+}
+
+
+.fa-pinterest {
+ 
+  color: white;
+}
+.hd4{
+  flex-basis: 20%;
+  width: 90%;
+  height: 80px;
+
+  display:flex;
+  align-items: top;
+  
+  
+  
+
+}
+
+
+
+
+.hd2, .hd3, .hd4{
+ 
+
+  margin: 2%;
+
+}
+
+
+.b1{
+    
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color:#ff340c;
+  margin-left: 5%;
+  align-items: center;
+  font-size: 20px;
+  color: #f2f2f2;
+  border: 1px solid #8f3523;
+  cursor: pointer;
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+
+.b2{
+    
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #ff340c;
+  margin-left: 5%;
+  align-items: center;
+  font-size: 20px;
+  color: #f2f2f2;
+  border: 1px solid #8f3523;
+  cursor: pointer;
+  font-family: 'Fonte1', sans-serif;
+}
+.b3{
+    
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color:#ff340c;
+  margin-left: 5%;
+  align-items: center;
+  font-size: 20px;
+  color: #f2f2f2;
+  border: 1px solid #8f3523;
+  cursor: pointer;
+  font-family: 'Fonte1', sans-serif;
+}
+
+.b4{
+    
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #ff340c;
+  margin-left: 5%;
+  align-items: center;
+  font-size: 20px;
+  color: #f2f2f2;
+  border: 1px solid #8f3523;
+  cursor: pointer;
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+.hd2 img{
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem img{
+  max-width: 90%;
+  height: auto;
+  margin-top: 10px;
+  display: block; /* Para que a imagem ocupe toda a largura da box */
+  margin: 0 auto; /* Para centralizar a imagem horizontalmente */
+}
+
+
+
+
+
+
+.principal {
+  width: 90%; 
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  /* border: 2px solid rgb(115, 214, 232); */
+}
+
+
+.buttons{
+  display: flex;
+  width: 100%;
+  
+  text-align: center;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.buttons button{
+background-color: #ebb9af;
+width: auto;
+
+border-radius: 10%;
+cursor: pointer;
+margin: 20px;
+font-size: 20px;
+font-family: 'Fonte1', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+
+
+.top_l{
+  width: 100%;
+  height: 50px;
+  background-color: bisque;
+  font-family: 'Fonte1', sans-serif;
+  font-size: 40px;
+  border-left: 6px solid  #ff340c;
+  margin-bottom: 10px;
+}
+
+
+
+.prin_l{
+      display: flex;
+      align-items: center;
+      
+}
+
+.prin_l .t2{
+  width: 50%;
+  height: auto;
+
+  background-color: #fae319;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  margin-right: 10px;
+  
+  
+}
+
+.t1{
+  width: auto;
+  height: 300px;
+  
+  font-size: 50px;
+  margin-right: 10px;
+
+}
+
+.t1 img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  
+}
+
+.t2{
+  width: 50%;
+  height: auto;
+
+  background-color: #fae319;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  margin-right: 10px;
+  
+  
+
+}
+
+.news{
+  display:block;
+  font-family: 'Fonte1', sans-serif;
+  
+ 
+  
+}
+
+.ha{
+  width: 100%;
+  height: 50px;
+  background-color: bisque;
+  margin-top: 2%;
+  font-size: 40px;
+  border-left: 6px solid  #ff340c;
+  margin-bottom: 10px;
+}
+
+
+
+.c {
+  width: 25%; /* Define a largura das boxes */
+  height: 200px; /* Define a altura das boxes */
+ 
+  margin: 10px; /* Define uma margem entre as boxes */
+
+  display: block;
+  
+  top:0;
+}
+
+.c img{
+  width: 100%;
+  height: 250px;
+  border-radius: 5%;
+}
+
+.box_new{
+
+  display: block;
+  align-items: center;
+
+}
+
+.box_new .nome{
+  margin-left: auto;
+   
+}
+
+.box_new img{
+  width: 20px;
+  height: auto;
+  
+}
+.box_new .nota{
+
+  align-items: center;
+  font-size: 30px;
+}
+
+
+
+.review .titulo{
+  width: 100%;
+  height:auto;
+
+
+  background-color: bisque;
+  font-size: 40px;
+  border-left: 6px solid  #ff340c;
+  font-family: 'Fonte1', sans-serif;
+  cursor: pointer;
+}
+
+.review .texto{
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 20px;
+ 
+}
+
+
+
+
+
+.social{
+ font-family: 'Fonte1', sans-serif;
+ width: 100%;
+ font-size: 25px;
+ height: auto;
+ background-color: bisque;
+ border-left: 6px solid  #ff340c;
+
+}
+
+.video iframe{
+ width: 100%;
+  height: 300px;
+  background-color: rgb(32, 137, 35);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+.share{
+
+
+  width: 100%;
+  height: auto;
+  background-color: rgb(170, 206, 220);
+  font-family: 'Fonte1', sans-serif;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.navigate{
+  display:block;
+  font-size: 30px;
+
+}
+
+.a1{
+  width: 100%;
+  height: auto;
+  font-family: 'Fonte1', sans-serif;
+  border-left: 6px solid  #ff340c;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------
+---------------------------------------
+-----------------------------------------*/
+
+@media (min-width: 320px) {
+
+.hd3{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hd1{
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desc{
+  background-color: #8f3523;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.hd4{
+  display: flex;
+  margin-top: 30px;
+
+}
+
+
+.prin_l{
+      display: block;
+      align-items: center;
+     
+      
+}
+
+
+
+.prin_l .t2{
+  width: 100%;
+  margin-top:20px;
+}
+
+.buttons{
+  margin-top: 50px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+  
+}
+
+
+.principal {
+  width: 90%; 
+  display: block;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  
+ 
+}
+
+
+.box-l{
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 90%;
+  margin-bottom: 50px;
+
+  
+}
+
+
+
+.box-r {
+  width: 90%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+  
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+}
+
+
+.ha{
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+
+
+.c{
+  display: block;
+  margin-bottom: 300px;
+ 
+
+  width: 100%;
+  text-align: center;
+  height: 500px;
+}
+
+.c_im img{
+ 
+   height: 700px;
+   
+}
+
+
+
+
+
+
+.review .titulo{
+  width: 100%;
+  height:auto;
+
+  
+  background-color: bisque;
+  font-size: 40px;
+  border-left: 6px solid  #ff340c;
+  font-family: 'Fonte1', sans-serif;
+  cursor: pointer;
+}
+
+.review .texto{
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 10px;
+  
+ 
+}
+
+
+
+  .h_cont{
+  width: 90%;
+  height: auto;
+  display:block;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+
+  }
+
+
+.n1{
+  margin: 0 10px;
+  width: auto;
+
+
+  
+  text-align: center;
+  font-size: 20px;
+ border-bottom: 2px solid  #ff340c;
+  height: 30px;
+ 
+}
+
+.n2{
+  margin: 0 10px;
+width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+ border-bottom: 2px solid  #ff340c;
+  text-align: center;
+  font-size: 20px;
+  /* border: 2px solid hotpink; */
+  height: 30px;
+
+}
+
+.n3{
+margin: 0 10px;
+
+ border-bottom: 2px solid  #ff340c;
+  text-align: center;
+  font-size: 20px;
+
+  height: 30px;
+
+ 
+}
+
+.barra{
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+.a1{
+  margin-bottom: 10px;
+  background-color: azure;
+  font-size: 30px;
+  font-family: 'Fonte1', sans-serif;
+  border-left: 6px solid #ff340c;
+  
+  
+}
+
+.a2 {
+  width: 100%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+  
+  margin:40px;  /* Define uma margem entre as boxes */
+  text-align: center;
+  margin-top: auto;
+  font-size: 40px;
+  display: block;
+ 
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  
+
+}
+
+
+.a2 .box{
+  display: flex;
+  margin-bottom: 10px;
+  height: auto;
+  background-color: bisque;
+  border-bottom: 6px solid #ff340c;
+}
+
+.a2 .nome{
+   flex-basis: 75%;
+   font-size: 20px;
+   text-align: left;
+
+}
+
+
+.a2 img{
+  
+  width: 20px;
+}
+
+.a2 .nota{
+  flex-basis: auto;
+
+  margin-left: auto;
+  font-size: 20px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navegacao {
+  width: 90%;
+  height: auto;
+  
+     
+  margin-top: 50px;
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+}
+
+/* Style the topnav links */
+.navegacao a {
+  font-size: 30px; /*unidade de medida absoluta*/
+  
+  display: block;
+  color: #f2f2f2;
+  line-height: 80px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  
+ 
+}
+
+/*----------------------*/
+
+.boxes {
+  display: block;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: auto;
+ 
+
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+
+
+
+.container {
+  width: 80%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+  
+  margin: 40px;  /* Define uma margem entre as boxes */
+  text-align: center;
+  margin-top: auto;
+  font-size: 40px;
+  display: block;
+ 
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+ 
+}
+
+.container .titulo{
+ 
+  margin-bottom: 10px;
+  background-color: azure;
+  font-size: 30px;
+  font-family: 'Fonte1', sans-serif;
+  border-left: 6px solid #ff340c;
+  text-align: left;
+  
+  
+}
+
+.box img{
+  width: 20px;
+
+}
+.container .conteudo{
+
+  height: auto;
+  display: block;
+}
+
+.box{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  margin-left: 0;
+  border: none;
+  border-bottom: 6px solid #ff340c;
+  
+ 
+}
+.box .nome{
+   flex-basis: 75%;
+   font-size: 20px;
+   text-align: left;
+
+}
+.box .nota{
+  flex-basis: auto;
+
+  margin-left: auto;
+  font-size: 20px;
+  margin-right: 10px;
+  align-items: center;
+  
+}
+
+
+.imagem img {
+margin-top: 80px;
+}
+
+
+.social{
+  font-size: 30px;
+}
+
+.container .conteudo{
+  background-color: rgb(253, 197, 58);
+  height: auto;
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+.c_im img{
+ 
+   height: 200px;
+   
+}
+
+
+.hd4{
+  display: flex;
+}
+
+.imagem img {
+margin-top: 80px;
+}
+
+
+
+.box-l {
+  width: 70%; /* Define a largura das boxes */
+  height: 900px; /* Define a altura das boxes */
+  margin-right: 40px;
+  
+  margin-top: auto;
+}
+
+.box-r {
+  width: 30%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+
+
+ margin-top: auto;
+ 
+}
+
+
+
+
+
+
+
+.social{
+  margin-top: auto;
+}
+
+
+
+.principal {
+  width: 90%; 
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  /* border: 2px solid rgb(115, 214, 232); */
+}
+
+
+
+.h_cont{
+  width: 90%;
+  height: 80px;
+  display:flex;
+
+  justify-content: flex-end;
+
+  
+  font-size: 25px;
+
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Fonte1', sans-serif;
+  
+}
+
+
+
+
+
+.n1{
+
+  width: 250px;
+  margin: 0 0;
+
+  text-align: center;
+  font-size: 20px;
+  
+  height: 30px;
+
+border-bottom: none;
+
+ 
+}
+
+.n2{
+margin: 0 0;
+  border-left: 2px solid #ff340c;
+
+  text-align: center;
+  font-size: 20px;
+  /* border: 2px solid hotpink; */
+  height: 30px;
+ width: 100px;
+border-bottom: none;
+
+}
+
+.n3{
+
+  margin: 0 0;
+  border-left: 2px solid #ff340c;
+
+  text-align: center;
+  font-size: 20px;
+  /* border: 2px solid hotpink; */
+  height: 30px;
+  width: 150px;
+  border-bottom: none;
+
+ 
+}
+
+.barra{
+  display: flex;
+  width: 90%;
+  height: height;
+  background-color: #787474;
+
+  margin-left: auto;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Fonte1', sans-serif;
+}
+
+.trending{
+color: #fae319;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.barra .n{
+   color: #f2f2f2;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+.navegacao a {
+  font-size: 30px; /*unidade de medida absoluta*/
+  
+  display: inline;
+  color: #f2f2f2;
+  line-height: 80px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  
+ 
+}
+
+.review{
+
+  margin-top: 0;
+}
+
+/*----------------------------------*/
+
+.boxes {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 500px;
+  flex-direction: row;
+  
+}
+
+
+.box {
+  width: 20%; /* Define a largura das boxes */
+  height: 200px; /* Define a altura das boxes */
+  /* border: 1px solid black;  */
+  margin: 10px; /* Define uma margem entre as boxes */
+  text-align: left;
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+
+
+.container {
+  width: 30%; /* Define a largura das boxes */
+  height: 400px; /* Define a altura das boxes */
+  
+  margin: 10px; /* Define uma margem entre as boxes */
+  text-align: left;
+  margin-top: 15%;
+  font-size: 40px;
+  display: block;
+
+ 
+}
+
+.container .titulo{
+ 
+  margin-bottom: 10px;
+  background-color: azure;
+  font-size: 30px;
+  font-family: 'Fonte1', sans-serif;
+  border-left: 6px solid #ff340c;
+  
+  
+}
+.box.nome{
+  width: 50%;
+
+  
+}
+.box img{
+  width: 20px;
+
+}
+.container .conteudo{
+  background-color: rgb(253, 197, 58);
+  height: auto;
+  display: block;
+}
+
+.box{
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  margin-left: 0;
+  border: none;
+  border-bottom: 6px solid #ff340c;
+  
+ 
+}
+.box .nome{
+   flex-basis: 60%;
+   font-size: 20px;
+
+}
+.box .nota{
+  flex-basis: auto;
+
+  margin-left: auto;
+  font-size: 20px;
+  margin-right: 10px;
+  
+}
+/*----------------------*/
+
+
+.hb {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  
+ 
+  
+ 
+}
+
+.news{
+
+   height: 400px;
+}
+
+.t2{
+  margin-top: 30px;
+}
+
+
+}
+
+
+@media (min-width: 1200px){
+
+.barra{
+  display: flex;
+  width: 90%;
+  height: 30px;
+  background-color: #787474;
+
+  margin-left: auto;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+.principal {
+  width: 90%; 
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  
+ 
+}
+
+
+
+.box-l {
+  width: 70%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+  margin-right: 40px;
+  
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.box-r {
+  width: 30%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+
+
+ margin-top: 0;
+ margin-bottom: auto;
+ 
+}
+
+
+
+.prin_l{
+      display: flex;
+    
+     align-items: flex-start;
+      
+  
+   height: auto;
+      
+    
+}
+
+
+.t1 {
+  height: auto;
+}
+
+
+
+
+.hb {
+  align-items: flex-start;
+  display: flex;
+
+ 
+}
+
+
+.c_im img{
+  height: 250px;
+}
+
+
+.social{
+  margin-top: auto;
+}
+
+
+
+
+
+
+
+.navegacao a {
+  font-size: 30px; /*unidade de medida absoluta*/
+  
+  display: inline;
+  color: #f2f2f2;
+  line-height: 80px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  
+ 
+}
+
+
+.news{
+
+  height: 500px;
+}
+
+
+/*----------------------------------*/
+.boxes {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  margin-top: 100px;
+  flex-direction: row;
+
+  
+}
+
+
+
+.container {
+  width: 30%; /* Define a largura das boxes */
+  height: auto; /* Define a altura das boxes */
+  
+  margin: 10px; /* Define uma margem entre as boxes */
+  text-align: left;
+  
+  font-size: 40px;
+  display: block;
+ 
+
+ 
+}
+
+.container .titulo{
+ 
+  margin-bottom: 10px;
+  background-color: azure;
+  font-size: 30px;
+  font-family: 'Fonte1', sans-serif;
+  border-left: 6px solid #ff340c;
+  
+  
+}
+
+
+.container .conteudo{
+  background-color: rgb(253, 197, 58);
+  height: auto;
+  display: block;
+}
+
+.box{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  margin-left: 0;
+  border: none;
+  border-bottom: 6px solid #ff340c;
+  
+ 
+  
+}
+
+.box img{
+  width: 20px;
+
+}
+.box .nome{
+   flex-basis: 60%;
+   font-size: 20px;
+
+}
+.box .nota{
+  flex-basis: auto;
+
+  margin-left: auto;
+  font-size: 20px;
+  margin-right: 10px;
+  
+}
+
+
+
+
+.h_cont{
+  display:flex;
+
+  width: 90%;
+  height: auto;
+
+  justify-content: flex-end;
+ 
+  
+  font-size: 25px;
+
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Fonte1', sans-serif;
+}
+
+
+.n1{
+
+width: 250px;
+  margin: 0 0;
+
+
+  text-align: center;
+  font-size: 20px;
+  
+  height: 30px;
+  border-bottom: none;
+}
+
+.n2{
+margin: 0 0;
+  border-left: 2px solid #ff340c;
+
+  text-align: center;
+  font-size: 20px;
+
+  height: 30px;
+  width: 100px;
+  border-bottom: none;
+
+}
+
+.n3{
+
+margin: 0 0;
+border-left: 2px solid #ff340c;
+border-bottom: none;
+  text-align: right;
+  font-size: 20px;
+
+  height: 30px;
+  width: 110px;
+  
+
+}
+
+/*-----------*/
+/*-----------*/
+/*-----------*/
+/*-----------*/
+
+.imagem img {
+margin-top: auto;
+}
+
+.hd4{
+  display: flex;
+}
+.buttons{
+  margin-top: 0;
+}
+
+
+.hd1{
+        
+  display: flex;
+  width: 90%;
+  height: 200px;
+  background-color: #ff340c;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  align-items: center;
+
+  
+}
+
+.hd2{
+
+        flex-basis: 30%;
+      
+        height: 150px;
+   
+   
+        text-align: left;
+        display: flex;
+        
+}
+
+.hd3{
+ 
+       
+  
+       
+        display: block;
+        width: 90%;
+        height: 200px;
+       position: relative;
+           font-family: 'Fonte1', sans-serif;
+   
+ 
+ 
+}
+
+
+
+.comp{
+
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: #ff340c;
+  color: #f2f2f2;
+  text-align: left;
+
+  font-size: 50px;
+  position: absolute;
+  margin-top: 50px;
+
+}
+
+.desc{
+
+
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #f2f2f2;
+  background-color: #ff340c;
+
+  text-align: left;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+ 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
