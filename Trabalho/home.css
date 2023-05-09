@@ -110,7 +110,16 @@ form{
 
 
 /* Estilos para dispositivos móveis */
+
+/* Estilos para dispositivos móveis */
 @media (min-width: 320px)  {
+	h2{
+		font-size: 5.5vw;
+	}
+	h1{
+		font-size: 3.5vw;
+	}
+
 	/*===================================================Formulário==========================================================================*/
 
 	form {
@@ -148,6 +157,9 @@ form{
 	/*Clareamento do botão ao ser passado pelo mouse*/
 	input[type=submit]:hover {
 	  opacity: 0.8;
+	}
+	form p, form label{
+		font-size: 3vw;
 	}
 
 	/*===================================================Avaliações==========================================================================*/
@@ -282,7 +294,7 @@ form{
 	}
 	.lined-text {
     background-color: #ff340c;
-    height: 3vw;
+    height: 5.5vw;
     flex-grow: 1;
     margin-left: 1%;
     padding: 0;
@@ -318,13 +330,13 @@ form{
 	.textomat{
 		display: block;
 		height: 80%;
-		font-size: 1.5vw;
+		font-size: 2.8vw;
 		overflow: scroll;
 
 	}
 	.titulomat{
 		display: block;
-		font-size: 2vw;
+		font-size: 3vw;
 		color: white;
 		background-color: rgba(0, 0, 0, 0.8);
 	}
@@ -362,6 +374,7 @@ form{
 		height: 70%;
 		width: 100%;
 		margin: 0;
+		font-size: 2.8vw;
 	}
 	.textosobre{
 		word-wrap: break-word;
@@ -424,6 +437,7 @@ form{
 		background-color: #2a2c32;
 		padding: 4%;
 		padding-right: 0;
+		font-size: 3vw;
 		
 	}
 	.footer a{
