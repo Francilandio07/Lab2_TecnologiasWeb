@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>POST</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+
+</head>
+
+<body class="conteudo exercicio" style="display: flex;flex-direction: column;">
+    <h1>Adicionar Usuário</h1>
+    <form style="margin-top: 20px;">
+        <p>
+            <label>ID:</label>
+            <input type="number" id="idInput">
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" id="emailInput">
+        </p>
+        <p>
+            <label>First Name:</label>
+            <input type="text" id="firstNameInput">
+        </p>
+        <p>
+            <label>Last Name:</label>
+            <input type="text" id="lastNameInput">
+        </p>
+        <p>
+            <label>Avatar:</label>
+            <input type="file" id="avatarInput">
+        </p>
+    </form>
+
+
+    <button onclick="adicionar()">Adicionar</button>
+
+
+    <div id="resultado" style="font-size: 30px; background-color: green;"></div>
+
+    <script>
+        const config_post = {
+            url: 'https://reqres.in/api/users',
+            metodo: 'POST',
+            data: {},
+            sucesso(resposta) {
+                console.log('POST:', resposta);
+                const resultado = document.getElementById('resultado');
+                resultado.innerHTML = ''; // Limpar resultados anteriores
+                resultado.textContent = 'Atualização Bem Sucedida';
+            },
+            erro(e) {
+                console.error('Erro POST:', e.codigo, e.texto);
+                resultado.textContent = 'Erro';
+            }
+        };
+
+        function adicionar() {
+            config_post.url = "https://reqres.in/api/users";
+            config_post.data = {
+                first_name: document.getElementById("firstNameInput").value,
+                last_name: document.getElementById("lastNameInput").value,
+                email: document.getElementById("emailInput").value,
+                avatar: document.getElementById("avatarInput").value
+            };
+
+            ajax(config_post);
+        }
+
+        function ajax(config) {
+            const xhr = new XMLHttpRequest();
+            xhr.open(config.metodo, config.url, true); // true para assíncrono
+
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    config.sucesso(xhr.response);
+                } else {
+                    config.erro({
+                        codigo: xhr.status,
+                        texto: xhr.statusText
+                    });
+                }
+            };
+
+            xhr.onerror = function () {
+                config.erro({
+                    codigo: xhr.status,
+                    texto: 'Erro na requisição.'
+                });
+            };
+
+            if (config.data) {
+                const formData = new FormData();
+                Object.keys(config.data).forEach(function (key) {
+                    formData.append(key, config.data[key]);
+                });
+                xhr.send(formData);
+            } else {
+                config.erro({
+                    codigo: 400,
+                    texto: 'Dados inválidos para requisição POST.'
+                });
+            }
+        }
+
+    </script>
+</body>

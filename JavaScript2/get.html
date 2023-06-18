@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>GET</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Tabela de Usuários</h1>
+
+    <button onclick="ajax()">Atualizar Tabela</button>
+
+    <div class="container">
+        <table style = "border:1;">
+            <thead style="background-color: grey;">
+                <th>ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>EMAIL</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+        const config={
+            url: "https://reqres.in/api/users",
+            metodo: "GET",
+            sucesso(resposta) {
+                criarTabela(resposta);
+            },
+            erro(e) {
+                const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
+                document.body.appendChild(msg)
+            }
+        }
+        function ajax() {
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.metodo, config.url, false)//true para assincrona
+
+            xhr.onload = e => {
+                if (xhr.status === 200) {
+                    let dado = xhr.responseText;
+                    let usuarios = JSON.parse(dado);
+                    config.sucesso(usuarios.data)
+                } else if (xhr.status >= 400) {
+                    config.erro({
+                        codigo: xhr.status,
+                        texto: xhr.statusText
+                    })
+                }
+            }
+            
+            xhr.send()
+            return xhr.responseText
+        }
+
+        function main(){
+            let dado = ajax();
+            let usuarios = JSON.parse(dado);
+            console.log(usuarios)
+            console.log(usuarios.data[0].first_name)
+        }
+
+        function criarTabela(dica) {
+            let tbody = document.getElementById("tbody");
+            dica.forEach(element => {
+                let tr = tbody.insertRow();
+
+                let td_id = tr.insertCell();
+                let td_first = tr.insertCell();
+                let td_last = tr.insertCell();
+                let td_email = tr.insertCell();
+
+                td_id.innerText = element.id;
+                td_first.innerText = element.first_name;
+                td_last.innerText = element.last_name;
+                td_email.innerText = element.email;
+            });
+        }
+    </script>
+</body>
