@@ -136,31 +136,38 @@ function onCollision(player, objects){ //objects é um array que armazena as ins
 
 //Função para controlar a velocidade dos carros e objetos do jogo
 function velocityHandler(decrease, offroad){ //decrease é booleano e indica se é pra diminuir a velocidade do player, starting indica se é o início do jogo
-  if (is_running) {
-    // a função já está em execução, não faz nada
-    return;
-  }
-  is_running = true//indicar que a função está executando impedindo chamadas simultâneas a ela
+  // if (is_running) {
+  //   // a função já está em execução, não faz nada
+  //   return;
+  // }
+
   if(decrease && offroad){
     velocity += 0.15*velocity //quando o carro está fora da pista, sua velocidade é reduzida de 15%
     velocity = Math.min(min_velocity, velocity)
     velocimeter.update(velocity) //atualiza a velocidade marcada no velocímetro
   }
   else if(decrease && !offroad){ //diminui a velocidade do player ao colidir com oponentes
-    let aux = velocity
-    velocity = 2
-    velocimeter.update(0.5) //atualiza a velocidade marcada no velocímetro
-    setTimeout(() =>{
-      velocity = aux
-      velocimeter.update(velocity) //atualiza a velocidade marcada no velocímetro
-    }, 1000);
+    if (!is_running) {
+      is_running = true;
+      let aux = velocity
+      velocity = 2
+      velocimeter.update(0.5) //atualiza a velocidade marcada no velocímetro
+      setTimeout(() =>{
+        velocity = aux
+        velocimeter.update(velocity) //atualiza a velocidade marcada no velocímetro
+      }, 1000);
+      setTimeout(() => {
+        is_running = false;
+      }, 1000); // Redefinir o valor de colisaoDetectada para false após 1 segundo
+    }
+    
   }
   else if(!decrease && !offroad){ //indica que o player aumenta a velocidade, o que ocorre quando ele pega nitro
     velocity -= 0.3 //faz com que os carros tenham a velocidade aumentada em termos de aproximação ao player (no caso velocidade do player ultrapassá-los)
     velocity = Math.max(max_velocity, velocity)
     velocimeter.update(velocity)
   }
-  is_running = false //indica que a função pode ser chamada novamente, essa é uma forma de impedir a modificação da velocity mais de uma vez ao mesmo tempo
+  //is_running = false //indica que a função pode ser chamada novamente, essa é uma forma de impedir a modificação da velocity mais de uma vez ao mesmo tempo
   
 }
 
