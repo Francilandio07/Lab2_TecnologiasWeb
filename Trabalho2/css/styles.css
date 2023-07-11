@@ -1,0 +1,344 @@
+:root{
+  --cloud_from: 1200px;
+  --cloud_to: -500px;
+  --cloud_velocity: 5s;
+}
+
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0D262D;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}  
+#menu{
+  display: flex;
+}
+#game{
+  display: none;
+}
+#gameover{
+  display: none;
+}
+#cerracao{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(5px); 
+}
+#escuridao{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+#nevoa{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+h1{
+  color: red;
+  margin: 0;
+}
+h2{
+  color: white;
+  margin: 0;
+}
+.menu{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: Black;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.card-container{
+  max-width: 900px;
+  display: flex;
+  position: relative;
+}
+
+
+.card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.092);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card.selected {
+  transform: scale(1.092);
+  border-color: blue;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  background: white;
+  padding: 10px;
+}
+
+button{
+  height: 80px;
+  width: 400px;
+  font-size: 50px;
+  background: white;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+  transform: scale(1.05);
+  background: rgb(190, 177, 177);
+  cursor: pointer;
+}
+.game{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+}
+.clouds{
+  top:20px;
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  animation: clouds-animation var(--cloud_velocity) infinite linear;
+}
+.sky-cerracao{
+  position: relative;
+  display: flex;
+  background: linear-gradient(rgb(211, 213, 226),#4b4b4b);
+  min-height: 30%;
+  overflow: hidden;
+  top: 0;
+}
+.cerracao{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: #4b4b4b;
+  min-height: 70%;
+  bottom: 0;
+}
+.sky-day{
+  position: relative;
+  display: flex;
+  background: linear-gradient(rgb(34, 65, 235), white);
+  min-height: 30%;
+  overflow: hidden;
+  top: 0;
+}
+
+.natural {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: green;
+  min-height: 70%;
+  bottom: 0;
+}
+
+.snow{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: linear-gradient(rgb(61, 201, 201), white);
+  min-height: 70%;
+  bottom: 0;
+}
+.sky-snow{
+  position: relative;
+  display: flex;
+  background: linear-gradient(white, rgb(34, 65, 235));
+  min-height: 30%;
+  overflow: hidden;
+  top: 0;
+}
+.night{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: linear-gradient(rgb(6, 7, 7), rgb(97, 90, 90));
+  min-height: 70%;
+  bottom: 0;
+}
+.sky-night{
+  position: relative;
+  display: flex;
+  background: linear-gradient(rgb(14, 37, 99), rgb(22, 41, 148));
+  min-height: 30%;
+  overflow: hidden;
+  top: 0;
+}
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid cyan;
+  width: 1200px;
+  height: 700px;
+}
+
+.car, .player{
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+
+}
+
+.progress {
+  position: absolute;
+  top: 10px;
+  right: 85px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ece43c;
+  font-size: 55px;
+  z-index: 100;
+}
+
+.velocimeter {
+  position: absolute;
+  top: 10px;
+  right: 42%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: hsl(32, 82%, 49%);
+  font-size: 55px;
+  z-index: 100;
+}
+
+.ranking {
+  position: absolute;
+  top: 10px;
+  right: 1110px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(41, 179, 23);
+  font-size: 55px;
+  z-index: 100;
+}
+
+.barextern{
+  width: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  z-index: 100;
+}
+.barintern{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(rgb(17, 241, 17),yellow, red);
+}
+
+.star, .cone, .gasoline{
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  z-index: 100;
+}
+.nitro{
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  z-index: 100;
+}
+
+.gameover{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: Black;
+  min-height: 100%;
+  min-width: 100%;
+  bottom: 0;
+}
+.posicao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  top: auto;
+  
+}
+.pontos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  top: auto;
+}
+.reabastecimentos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  top: auto;
+}
+.reabastecimento{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(21, 151, 190);
+  font-size: 55px;
+  margin: 0;
+}
+
+h6{
+  font-size: 100px;
+  color: red;
+  margin: 0;
+  margin-top: 75px;
+}
+
+@keyframes clouds-animation {
+  from {right: var(--cloud_from)}
+  to{right: var(--cloud_to)}
+}
