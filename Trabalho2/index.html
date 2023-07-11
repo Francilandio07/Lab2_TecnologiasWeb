@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Enduro</h1>
+    
+    <div class="container">
+
+      <!-- =================Menu======================= -->
+      <div id="menu" class="menu">
+        <h1>Menu principal</h1>
+        <h2>Selecione o cenário:</h2>
+        <!-- =================cards com imagens de cenários======================= -->
+        <div class="card-container">
+          <div class="card" id="1">
+            <img class="card-img-top" src="imgs/snow.png" alt="Cenário 1">
+            <div class="card-body">
+              <h5 class="card-title">Cenário de Neve</h5>
+              <p class="card-text">O tempo é frio, mas o clima é quente.</p>
+            </div>
+          </div>
+          
+          <div class="card" id="2">
+            <img class="card-img-top" src="imgs/natural.png" alt="Cenário 2">
+            <div class="card-body">
+              <h5 class="card-title">Cenário Diário</h5>
+              <p class="card-text">Asfalto pegando fogo como o Sol.</p>
+            </div>
+          </div>
+          
+          <div class="card" id="3">
+            <img class="card-img-top" src="imgs/night.png" alt="Cenário 3">
+            <div class="card-body">
+              <h5 class="card-title">Cenário Noturno</h5>
+              <p class="card-text">A escuridão sempre a frente.</p>
+            </div>
+          </div>
+
+          <div class="card" id="4">
+            <img class="card-img-top" src="imgs/cerracao.png" alt="Cenário 4">
+            <div class="card-body">
+              <h5 class="card-title">Cenário com Cerração</h5>
+              <p class="card-text">Situação embaçada... De olho na pista!</p>
+            </div>
+          </div>
+        </div>
+        <!-- =================Botão de início======================= -->
+        <button onclick="startGame()">Iniciar</button>
+      </div>
+
+      <!-- =================Tela de jogo======================= -->
+      <div id="game" class="game">
+        <!-- =================Céu======================= -->
+        <div id="sky" class="sky-day">
+          <img class="clouds" src="imgs/clouds.png">
+        </div>
+        <!-- =================Chão======================= -->
+        <div id="ground" class="natural">
+          <svg height = "100%" width="100%" viewBox="-3329.38 -62.5199 15090 9300"  preserveAspectRatio="xMidYMid meet">
+            <path fill="#474a51" stroke-width="30" stroke="white" fill-opacity="1" d="M 4750 0 C 6931 4531 7675 6174 9500 10800 C 6300 10800 3100 10800 0 10800 C 1876 6702 3085 3724 4750 0z"></path>
+          </svg>
+        </div> 
+        <div id = "cerracao"></div>
+        <div id = "escuridao"></div>
+        <div id = "nevoa"></div>
+      </div>
+
+      <!-- =================Tela de Game Over======================= -->
+      <div id="gameover" class="gameover">
+        <h6>Game Over</h6>
+        <div class="pontos">
+          <h2>Pontuação:</h2>
+        </div>
+        <div class="posicao">
+          <h2>Carros ultrapassados:</h2>
+        </div>
+        <div class="reabastecimentos">
+          <h2>Reabastecimentos:</h2>
+          <p class="reabastecimento"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js">  
+    </script>
+  </body>
+</html>
