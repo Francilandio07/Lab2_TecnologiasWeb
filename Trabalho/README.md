@@ -27,7 +27,7 @@ As partes livres do Wireframe devem conter, conforme a escolha do grupo, dados r
 
 Seguindo as recomendações do professor, minha colega Vanessa Carvalho e eu fizemos um site com tema de filmes e séries, e por isso tentamos aplicar os elementos do site <a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a>.
 
-O site desenvolvido: [rotten tomatoes cópia](https//francilandio07.github.io/).
+O site desenvolvido: [rotten tomatoes cópia](https://francilandio07.github.io/).
 
 
 
