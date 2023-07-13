@@ -16,4 +16,4 @@ No menu principal o usuário tem 4 opções de cenários para escolher, sendo el
 
 A movimentação do carro é feita ao pressionar as teclas **A** (move para a esquerda) e **D** (move para a direita).
 
-Clique para jogar: https://francilandio07.github.io/Lab_TecnologiasWeb/Trabalho2/
+Clique para jogar: [Enduro-cópia](https://francilandio07.github.io/Lab_TecnologiasWeb/Trabalho2/).
