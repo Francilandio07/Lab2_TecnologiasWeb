@@ -15,3 +15,5 @@ Algumas regras aplicadas no jogo são que a velocidade do carro aumenta quando e
 No menu principal o usuário tem 4 opções de cenários para escolher, sendo eles: cenário noturno, diurno, com neve e com cerração.
 
 A movimentação do carro é feita ao pressionar as teclas **A** (move para a esquerda) e **D** (move para a direita).
+
+Clique para jogar: https://francilandio07.github.io/Lab_TecnologiasWeb/Trabalho2/
